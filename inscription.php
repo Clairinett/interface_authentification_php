@@ -2,8 +2,6 @@
 
 require_once 'Connexion_bdd\bdd_text_connexion.php';
 
-// $grainSel = "K5gsI3Etv89P"; // sécurité suplémentaire pour le hash
-// $grainPoivre = "C7sa5YW6M";
 
 if (isset($_POST['pseudo']) && isset($_POST['password']) && isset($_POST['confirmPassword']) && !empty($_POST['pseudo']) && !empty($_POST['password']) && !empty($_POST['confirmPassword'])) { // POST car on utilise la méthode post
     $pseudo = $_POST['pseudo']; // récupère le pseudo de la méthode POST dans le formulaire dans la page d'index
